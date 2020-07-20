@@ -140,7 +140,7 @@ riscv_plic0_get_vector_mode(struct metal_interrupt controller) {
 
 int riscv_plic0_set_privilege(struct metal_interrupt controller,
                               metal_intr_priv_mode privilege) {
-    if (privilege = METAL_INTR_PRIV_M_MODE) {
+    if (privilege == METAL_INTR_PRIV_M_MODE) {
         return 0;
     }
     return -1;
